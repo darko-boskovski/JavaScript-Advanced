@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     let loginButton = document.getElementById("login");
     let logOutButton = document.getElementById("logout");
-    let RegisterButton = document.getElementById("register");
+    let registerButton = document.getElementById("register");
     let createName = document.getElementById("regUname");
     let createPass = document.getElementById("regPass");
     let nameInput = document.getElementById("uname");
@@ -133,7 +133,7 @@ $(document).ready(function() {
 
 
 
-    RegisterButton.addEventListener('click', function() {
+    registerButton.addEventListener('click', function() {
 
         if (createName.value === "" || createName.value.length < 3 || createPass.value.length < 6 || createName.Pass === "") {
 
