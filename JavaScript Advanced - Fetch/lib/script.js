@@ -46,7 +46,7 @@ $(document).ready(function() {
             for (const album of response) {
 
                 if (album.title.indexOf(word) == -1) {
-			console.error("There is no such Album");
+			console.log("There is no such Album");
                 } else {
                     storeResult.innerHTML += `<li>UserId: ${album.userId},<br/> id: ${album.id},<br/> Title: ${album.title},<br/></li>`;
                 }
