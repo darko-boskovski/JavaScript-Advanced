@@ -45,11 +45,10 @@ $(document).ready(function() {
         if (response !== undefined && response.length > 0) {
             for (const album of response) {
 
-                if (album.title.indexOf(word) == -1) {
-			console.log("There is no such Album");
-                } else {
-                    storeResult.innerHTML += `<li>UserId: ${album.userId},<br/> id: ${album.id},<br/> Title: ${album.title},<br/></li>`;
-                }
+                if (album.title.indexOf(word) !== -1) {
+			storeResult.innerHTML += `<li>UserId: ${album.userId},<br/> id: ${album.id},<br/> Title: ${album.title},<br/></li>`;
+                }               
+                
             }
 
         }
