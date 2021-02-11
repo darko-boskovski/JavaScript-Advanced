@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: fit-content;
+    margin: 100px auto;
+    background-image: url(../images/landscape-1920.jpg);
+    background-repeat: no-repeat;
+}
+
+.main {
+    width: 350px;
+    height: fit-content;
+    box-shadow: 0px 5px 18px rgb(118, 179, 179);
+}
+
+#displayUp {
+    background-color: rgba(222, 250, 253, 0.5);
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    font-weight: 500;
+    padding-top: 5%;
+    color: rgb(44, 44, 44);
+}
+
+#displayUp p {
+    font-size: 20px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#displayDown p {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 10px;
+    overflow-x: hidden;
+}
+
+#displayDown {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    background-color: rgba(222, 250, 253, 0.5);
+    text-align: right;
+    vertical-align: text-bottom;
+}
+
+.buttons {
+    height: 75%;
+    width: 100%;
+    display: table;
+}
+
+button {
+    border: 1px solid rgb(209, 209, 209);
+    padding: 0;
+    width: 25%;
+    height: 55px;
+    justify-content: center;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    background-color: white;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: rgb(213, 220, 223);
+}
+
+.operators {
+    font-weight: 300;
+    background-color: rgb(244, 254, 255);
+}
+
+#equal {
+    background-color: rgba(84, 146, 228, 0.5);
+}
+
+#equal:hover {
+    background-color: rgba(84, 146, 228, 1);
+}
+
+#footer {
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    bottom: 80px;
+    right: 125px;
+    color: white;
+}
