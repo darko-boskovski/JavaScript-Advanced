@@ -16,7 +16,10 @@ $(document).ready(function() {
 
 
     let multiply = function(a, b) { return a * b };
-    console.log("The Result from multiplication of two numbers with callback function is:", calculate(multiply, 3, 5));
+    setTimeout(() => {
+        console.log("The Result from multiplication of two numbers with callback function is:", calculate(multiply, 3, 5));
+
+    }, 500);
 
 
     // Callback function that will print the result of every user from "https://jsonplaceholder.typicode.com/users"
