@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     let numberOne = 8
 
-    let numberTwo = 10
+    let numberTwo = 12
 
 
     function fibonacci(number) {
