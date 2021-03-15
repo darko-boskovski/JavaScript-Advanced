@@ -1,0 +1,43 @@
+body {
+    margin: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medium {
+    height: 40vh;
+}
+
+.small {
+    height: 30vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#result {
+    padding: 5%;
+}
+
+#result * {
+    word-wrap: break-word;
+}
+
+.div * {
+    word-wrap: break-all;
+}
+
+#loader {
+    display: none;
+    height: 10vh;
+}
+
+#previousButton,
+#nextButton {
+    display: block;
+}
