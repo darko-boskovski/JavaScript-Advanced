@@ -122,9 +122,7 @@ class TeamSports extends Sport {
         this.historyOfMatches = matches
 
     }
-
-
-    winner = (listOfCountries) => {
+    winner(listOfCountries) {
 
 
         if (this.numberOfGames === 2) {
@@ -178,7 +176,7 @@ class IndividualSports extends Sport {
         this.historyOfMatches = matches
     }
 
-    winner = (listOfCountries) => {
+    winner(listOfCountries) {
 
 
         if (this.numberOfGames === 1) {
@@ -237,11 +235,14 @@ let Slovakia = new Country("Slovakia", 15000000, 10, 10)
 let olympic = new OlympicGames("Australia", 30, [Macedonia, Bulgaria, Greece, Germany, Slovakia], "20.12.2020", "30.10.2020", 300, ["Golf,Hokey,Football"])
 
 
-let golf = new IndividualSports("Golf", 3, "This is a boring sport", "individual", 1, ["Macedonia (20) , Bulgaria (3), Greece (8)", "Slovakia (3), Greece (20)", "Germany (7), Bulgaria (10)"])
+let golf = new IndividualSports("Golf", 3, "This is a boring sport", "individual", 1, ["Macedonia (1) , Bulgaria (3), Greece (8)", "Slovakia (3), Greece (20)", "Germany (7), Bulgaria (10)"])
+
 golf.winner(olympic.listOfCountries)
+
 console.log(olympic)
 
-let handball = new TeamSports("Handball", 5, "This is less boring sport", "team", 2, ["Macedonia (30) - Bulgaria (15)", "Greece (25) - Slovakia (35)", "Greece (20) - Germany (27)", "Bulgaria (10) - Macedonia (25)"])
+let handball = new TeamSports("Handball", 5, "This is less boring sport", "team", 2, ["Macedonia (30) - Bulgaria (15)", "Greece (25) - Slovakia (35)", "Greece (20) - Germany (27)", "Bulgaria (10) - Macedonia (30)"])
+
 handball.winner(olympic.listOfCountries)
 
 console.log(olympic)
