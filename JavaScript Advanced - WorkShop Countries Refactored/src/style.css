@@ -1,0 +1,49 @@
+body {
+    margin: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medium {
+    height: 40vh;
+}
+
+.small {
+    height: 30vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#result tr td {
+    border: 1px solid black;
+    max-width: 250px;
+    padding: 5px;
+}
+
+#result * {
+    word-wrap: break-word;
+}
+
+.div * {
+    word-wrap: break-all;
+}
+
+#loader {
+    display: none;
+    height: 10vh;
+}
+
+#previousButton,
+#nextButton {
+    display: block;
+}
+
+.row {
+    margin: 30px;
+}

@@ -64,22 +64,8 @@ function currenciesCheck(myCountry, countries) {
 
 
 
-getDataBtn.addEventListener('click', () => {
-    let allCountries = [];
-    getEveryCountryData()
-        .then(countries => {
-            console.log(`All the Countries in the World:`)
-            console.log(countries)
-            allCountries = countries;
-            console.log(`The Country with the 2-Letter Code "${countryCodeInput.value}" is:`)
-            return getCountryData(countryCodeInput.value)
-        }).then(response => {
-            console.log(response)
-            return currenciesCheck(response, allCountries)
-        })
-        .then(response => console.log(response))
-        .catch(err => console.error(err))
-        .finally(() => console.log(`Everything ended on: ${new Date()}`))
+getDataBtn.addEventListener('click', function() {
+    console.log(this)
 
 })
 
